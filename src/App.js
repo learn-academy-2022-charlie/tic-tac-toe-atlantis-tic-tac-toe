@@ -7,7 +7,9 @@ class App extends Component {
     super(props)
     this.state = {
       squares: [null, null, null, null, null, null, null, null, null],
-      player: "❌"
+      player: "❌",
+      gameOver: false
+      //Once the winner has been chosen game over becomes true and the game stops
     }
   }
   // THIS COMMENT IS FOR THE EMOJIS ❌ AND ⭕️
@@ -47,6 +49,14 @@ class App extends Component {
 
     this.setState({ squares: squares })
   }
+
+  //Function that looks at winning sequences and says which player is the winner 
+    //Possibly using componentDidMount
+    //Need an array of arrays containing winning sequences
+    //Needs to run after a square has been assigned to a player
+    //Cannot keeping playing if a winner has been chosen 
+
+
 
 
   render() {
