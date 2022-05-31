@@ -7,25 +7,25 @@ This project will challenge your knowledge of React but should also be an exerci
 ### 📚 User Stories
 
 - As a user, I can see a 3x3 grid game board on the page.
-  -Branch: grid
-  -Starting out we see one square we need to have a total of 9 centered on the page. Square component needs to iterate over this.state.squares array.
-  -Style in CSS to align everything to the page
+  - Branch: grid
+  - Starting out we see one square we need to have a total of 9 centered on the page. Square component needs to iterate over this.state.squares array.
+  - Style in CSS to align everything to the page
 - As a user, I can click on a square to mark it.
-  -Branch: square-click
-  -Each square needs an onClick attribute in order to make something appear in the square once clicked
-  -In order to see something appear in the box we need to change the state of the square with the emoji we want
+  - Branch: square-click
+  - Each square needs an onClick attribute in order to make something appear in the square once clicked
+  - In order to see something appear in the box we need to change the state of the square with the emoji we want
 - As a user, my partner can click on a square after me and see their mark.
-  -Branch: partner-square-click
-  -In order for two users to use the game their needs to be a isXsTurn in this.state set to true once X goes then set the boolean to false so O can go
+  - Branch: partner-square-click
+  - In order for two users to use the game their needs to be a isXsTurn in this.state set to true once X goes then set the boolean to false so O can go
 - As a user, I can't click on a square that has already been marked.
-  -Branch: no-click
+  - Branch: no-click
 - As a user, when either my partner or I win the game (3 squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
-  -Branch: winner
+  - Branch: winner
 - As a user, I can't continue playing the game after the game has been won.
 - As a user, if there are no more squares available, I can see a notice telling me that the game has ended.
-  -Branch: game-stop
+  - Branch: game-stop
 - As a user, I can click on a restart button that will clear the game board.
-  -Branch: restart-game
+  - Branch: restart-game
 
 ### 🏔 Stretch Goals
 

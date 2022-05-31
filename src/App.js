@@ -9,6 +9,13 @@ class App extends Component {
       squares: [null, null, null, null, null, null, null, null, null]
     }
   }
+// THIS COMMENT IS FOR THE EMOJIS ❌ AND ⭕️
+
+handleGamePlay = (index) => {
+  let { squares } = this.state
+  squares[index] = "❌"
+  this.setState({squares: squares})
+}
 
   render() {
     return(
@@ -16,7 +23,11 @@ class App extends Component {
         <h1>Tic Tac Toe</h1>
         <div className='game-board'>
           {this.state.squares.map((value, index) => {
-            return (<Square/>)
+            return (<Square
+            value = {value}
+            index = {index}
+            key = {index}
+            handleGamePlay = {this.handleGamePlay}/>)
           })}
         </div>
       </>
