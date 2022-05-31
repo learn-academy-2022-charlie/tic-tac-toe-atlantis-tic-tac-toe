@@ -16,9 +16,9 @@ This project will challenge your knowledge of React but should also be an exerci
   - In order to see something appear in the box we need to change the state of the square with the emoji we want
 - As a user, my partner can click on a square after me and see their mark.
   - Branch: partner-square-click (DONE)
-  - In order for two users to use the game their needs to be a isXsTurn in this.state set to true once X goes then set the boolean to false so O can go
+  - The game will display a player state. After a box is marked, it will alternate the player state.
 - As a user, I can't click on a square that has already been marked.
-  - Branch: no-click
+  - Branch: no-click (DONE)
 - As a user, when either my partner or I win the game (3 squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
   - Branch: winner
 - As a user, I can't continue playing the game after the game has been won.
