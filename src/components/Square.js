@@ -8,11 +8,11 @@ class Square extends Component {
   }
 
   render() {
-    return(
+    return (
       <>
         <div className="square"
-        onClick = {this.handleClick}>
-        {this.props.value}  
+          onClick={this.handleClick}>
+          {this.props.value}
         </div>
       </>
     )
