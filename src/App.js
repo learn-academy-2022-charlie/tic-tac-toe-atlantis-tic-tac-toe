@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Square from './components/Square'
 import './App.css'
+import Winner from './components/Winner'
 
 class App extends Component {
   constructor(props) {
