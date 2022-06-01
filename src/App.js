@@ -9,8 +9,9 @@ class App extends Component {
     this.state = {
       squares: [null, null, null, null, null, null, null, null, null],
       player: "❌",
-      gameOver: false
-      //Once the winner has been chosen game over becomes true and the game stops
+      gameOver: false,
+      clickCount: 0
+
     }
   }
 
@@ -41,24 +42,29 @@ class App extends Component {
 
 
   handleGamePlay = (index) => {
-    let { squares, player } = this.state
+    let { squares, player, gameOver, clickCount } = this.state
     if (squares[index] !== null) {
-      alert("Choose an empty square")
+      alert("Choose an empty square or reset the game")
+    }
+    else if (gameOver === true ){
+      alert('Please reset the game')
     }
     else if (player === "❌") {
       squares[index] = "❌"
-      this.setState({ player: "⭕️" })
+      this.setState({ player: "⭕️", clickCount: clickCount +1})
     } else {
       squares[index] = "⭕️"
-      this.setState({ player: "❌" })
+      this.setState({ player: "❌", clickCount: clickCount +1}) 
     }
 
     this.setState({ squares: squares })
   }
 
+ 
+
   gameOver = () => {
-    // let { gameOver } = this.state
-    if ({ gameOver: true }) {
+    let { gameOver } = this.state
+    if (gameOver === true ) {
       return null
     } else { this.setState({ gameOver: true }) }
   }
@@ -75,6 +81,7 @@ class App extends Component {
 
   render() {
     console.log("State of gameOver: ", this.state.gameOver)
+    console.log("Click Count: ", this.state.clickCount)
     return (
       <>
         <h1>Tic Tac Toe</h1>
