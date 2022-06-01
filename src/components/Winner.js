@@ -16,7 +16,13 @@ class Winner extends Component {
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-        return <>${squares[a]} is the winner!!! {this.props.gameOver}</>
+        return <>${squares[a]} is the winner!!! 
+        {this.props.gameOver()}
+        {/* index.js:1437 Warning: Cannot update during an existing state transition (such as within `render`). Render methods should be a pure function of props and state.
+    in Winner (at App.js:91)
+    in div (at App.js:82)
+    in App (at src/index.js:7) */}
+        </>
       }
     }
     return null

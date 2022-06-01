@@ -20,10 +20,13 @@ This project will challenge your knowledge of React but should also be an exerci
 - As a user, I can't click on a square that has already been marked.
   - Branch: no-click (DONE)
 - As a user, when either my partner or I win the game (3 squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
-  > Branch: winner (IN PROGRESS)
+  - Branch: winner (DONE)
+  - Created a new component named Winner where we compared the different winning sequences to each user click
+  - Then we component called Winner in the App.js return
 - As a user, I can't continue playing the game after the game has been won.
 - As a user, if there are no more squares available, I can see a notice telling me that the game has ended.
-  - Branch: game-stop
+  - Branch: game-stop (DONEish)
+    - We have not created a unique alert if the game board is full
 - As a user, I can click on a restart button that will clear the game board.
   - Branch: restart-game
 
